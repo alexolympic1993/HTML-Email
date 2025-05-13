@@ -1,0 +1,573 @@
+<!DOCTYPE html
+	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Картины мира</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body {
+			width: 100% !important;
+			-webkit-text-size-adjust: 100%;
+			-ms-text-size-adjust: 100%;
+			margin: 0;
+			padding: 0;
+			line-height: 100%;
+		}
+
+		[style*="Arial"] {
+			font-family: Arial, 'Open Sans', sans-serif !important;
+		}
+
+		img {
+			outline: none;
+			text-decoration: none;
+			border: none;
+			-ms-interpolation-mode: bicubic;
+			max-width: 100% !important;
+			margin: 0;
+			padding: 0;
+			display: block;
+		}
+
+		table td {
+			border-collapse: collapse;
+		}
+
+		table {
+			border-collapse: collapse;
+			mso-table-lspace: 0pt;
+			mso-table-rspace: 0pt;
+		}
+
+		/* Header*/
+
+		.header {
+			padding-top: 30px;
+			padding-bottom: 30px;
+		}
+
+		/*First-section*/
+
+		.first-section {
+			width: 100%;
+			height: 300px;
+			object-fit: cover;
+		}
+
+		/*Описание*/
+
+		.desc {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+
+		.desc__name {
+			padding-bottom: 13px;
+		}
+
+		.desc__title {
+			margin: 0;
+			color: #515151;
+			font-size: 20px;
+			line-height: 24px;
+		}
+
+		.desc__text {
+			margin: 0;
+			color: #515151;
+			font-size: 12px;
+			line-height: 24px;
+		}
+
+		/*Представленные художники */
+
+		.artists__box {
+			padding-top: 26px;
+			padding-bottom: 26px;
+		}
+
+		.artists__table {
+			width: 520px;
+		}
+
+		.artists__title {
+			margin: 0;
+			color: #ffffff;
+			font-size: 16px;
+			line-height: 24px;
+			padding-bottom: 21px;
+		}
+
+		.artists__img {
+			height: 180px;
+			width: 520px;
+			padding-bottom: 21px;
+			object-fit: cover;
+		}
+
+		.artists__name {
+			margin: 0;
+			color: #ffffff;
+			font-weight: 700;
+			font-size: 12px;
+			line-height: 24px;
+			padding-bottom: 8px;
+		}
+
+		.artists__desc {
+			margin: 0;
+			color: #ffffff;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			padding-bottom: 21px;
+		}
+
+		/*Преимущества */
+
+		.benefits__box {
+			padding-top: 32px;
+			padding-bottom: 32px;
+		}
+
+		.benefits__title {
+			margin: 0;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 24px;
+			color: #515151;
+			padding-bottom: 11px;
+		}
+
+		.benefits__item {
+			vertical-align: top;
+		}
+
+		.benefits__desc {
+			margin: 0;
+			color: #515151;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+			padding-right: 21px;
+			width: 140px;
+		}
+
+		.benefits__img {
+			padding-bottom: 11px;
+		}
+
+		.benefits__btn {
+			font-style: normal;
+			font-weight: 700;
+			font-size: 14px;
+			text-align: center;
+			border-radius: 16px;
+			background-color: #9D5CD0;
+			width: 240px;
+			height: 45px;
+		}
+
+		.benefits__btn a {
+			color: #ffffff;
+			width: 100%;
+			height: 100%;
+			text-decoration: none;
+		}
+
+		.benefits__items {
+			padding-bottom: 34px;
+		}
+
+		/*Социальные сети */
+
+		.social__links {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+
+		.social__brand {
+			margin: 0;
+			color: #757575;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 24px;
+		}
+
+		/*Footer */
+
+		.footer__desc {
+			margin: 0;
+			color: #757575;
+			font-weight: 400;
+			font-size: 10px;
+			line-height: 24px;
+		}
+
+		@media (max-width: 600px) {
+			.table-280 {
+				width: 280px !important;
+			}
+
+			.table-244 {
+				width: 244px !important;
+			}
+
+			/* Header*/
+
+			.header__mobile {
+				padding-top: 17.24px;
+				padding-bottom: 17.24px;
+			}
+
+			.header__logo {
+				width: 114px;
+				height: 25px;
+			}
+
+			/*Представленные художники */
+
+			.artists__img {
+				height: 84px;
+				padding-bottom: 10px;
+			}
+
+			/*Преимущества */
+
+			.benefits__mobile {
+				display: block !important;
+				padding-bottom: 11px;
+			}
+
+			.benefits__desc-mobile {
+				display: block !important;
+				width: 244px;
+				padding-right: 0px;
+			}
+
+		}
+	</style>
+</head>
+
+<body style="margin: 0; padding: 0;">
+	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое
+		письмо</div>
+	<!-- Главный контейнер -->
+	<table cellpadding="0" cellspacing="0" width="600px" class="table-600" bgcolor="#ffffff" align="center">
+
+		<!-- Header -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" bgcolor="#000000" align="center">
+			<tr>
+				<td class="header header__mobile">
+					<table width="520px" class="table-244" cellpadding="0" cellspacing="0" bgcolor="#000000"
+						align="center">
+						<tr>
+							<td align="center">
+								<img class="header__logo" src="https://i.postimg.cc/bNXCPVJY/Logo.png" alt="Logo">
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table>
+
+		<!-- First-section -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" align="center">
+			<tr>
+				<td class="first-section table-244">
+					<img class="first-section" src=https://i.postimg.cc/hvm2xTCq/first-section.jpg alt="Изображение">
+				</td>
+			</tr>
+		</table>
+
+		<!-- Описание -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff">
+			<tr>
+				<td class="desc">
+					<table width="520px" class="table-244" cellpadding="0" cellspacing="0" bgcolor="#ffffff"
+						align="center">
+						<tr>
+							<td class="desc__name">
+								<h1 class="desc__title" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Торжество импрессионизма
+								</h1>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<p class="desc__text" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Опыт говорит нам, что семантический разбор внешних противодействий требует анализа
+									новых
+									принципов формирования материально-технической и кадровой базы.<br><br>
+									Задача организации, в особенности же внедрение современных методик, в своём
+									классическом
+									представлении, допускает внедрение глубокомысленных рассуждений. Есть над чем
+									задуматься:
+									элементы политического процесса преданы социально-демократической анафеме! Но
+									интерактивные
+									прототипы заблокированы в рамках своих собственных рациональных ограничений.
+									Сторонники
+									тоталитаризма в науке ограничены исключительно образом мышления.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+		</table>
+
+		<!-- Представленные художники -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" align="center" bgcolor="#000000">
+
+			<tr>
+				<td class="artists__box">
+					<table cellpadding="0" cellspacing="0" align="center" class="artists__table table-244"
+						bgcolor="#000000">
+						<tr>
+							<td>
+								<h2 class="artists__title" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Представленные художники
+								</h2>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="artists__img" src="https://i.postimg.cc/MGZ34cGy/art1.png" alt="Картина1">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="artists__name" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Поль Гоген
+								</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="artists__desc" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Прежде всего, разбавленное изрядной долей эмпатии, рациональное мышление в
+									значительной степени обусловливает важность укрепления моральных ценностей.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="artists__img" src="https://i.postimg.cc/FHNTdf32/art2.png" alt="Картина2">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="artists__name" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Огюст Ренуар
+								</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="artists__desc" style="font-family: Arial, 'Open Sans', sans-serif;">
+									А также сделанные на базе интернет-аналитики выводы освещают чрезвычайно интересные
+									особенности картины в целом.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="artists__img" src="https://i.postimg.cc/N00bDWND/art3.png" alt="Картина3">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="artists__name" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Клод Моне
+								</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="artists__desc" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Современная методология разработки однозначно фиксирует необходимость системы
+									массового участия.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="artists__img" src="https://i.postimg.cc/qvxZjcpJ/art4.png" alt="Картина4">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="artists__name" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Эдуард Мане
+								</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="artists__desc" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Но социально-экономическое развитие является качественно новой ступенью вывода
+									текущих активов.
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<img class="artists__img" src="https://i.postimg.cc/x15tK0Pq/art5.png" alt="Картина5">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3 class="artists__name" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Винсент Ван Гог
+								</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="artists__desc" style="font-family: Arial, 'Open Sans', sans-serif;">
+									Повседневная практика показывает, что разбавленное изрядной долей эмпатии,
+									рациональное мышление требует анализа поставленных обществом задач.
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+
+		<!-- Преимущества -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff">
+			<tr>
+				<td class="benefits__box" align="center">
+					<table width="520px" class="table-244" cellpadding="0" cellspacing="0" align="center"
+						bgcolor="#ffffff">
+						<tr>
+							<td>
+								<p class="benefits__title" style="font-family: Arial, 'Open Sans', sans-serif;">И это
+									ещё не всё!</p>
+							</td>
+						</tr>
+						<tr>
+							<td class="benefits__items">
+								<table cellpadding="0" cellspacing="0" class="table-244">
+									<tr>
+										<td class="benefits__item benefits__mobile">
+											<img class="benefits__img"
+												src="https://i.postimg.cc/ZRC7b1pn/check-square.png" alt="">
+											<p class="benefits__desc benefits__desc-mobile"
+												style="font-family: Arial, 'Open Sans', sans-serif;">
+												Уникальные подборки работ с авторскими рецензиями
+											</p>
+										</td>
+										<td class="benefits__item benefits__mobile">
+											<img class="benefits__img" src="https://i.postimg.cc/mrdpGbcK/calendar.png"
+												alt="">
+											<p class="benefits__desc benefits__desc-mobile"
+												style="font-family: Arial, 'Open Sans', sans-serif;">
+												Возможность настроить нашу рассылку под свой личный вкус
+											</p>
+										</td>
+										<td class="benefits__item benefits__mobile">
+											<img class="benefits__img"
+												src="https://i.postimg.cc/Bn0VT797/arrow-up-circle.png" alt="">
+											<p class="benefits__desc benefits__desc-mobile"
+												style="font-family: Arial, 'Open Sans', sans-serif;">
+												У вас есть пожелания и предложения?<br>
+												Напишите нам в ответ на это письмо!
+											</p>
+										</td>
+									</tr>
+
+								</table>
+							</td>
+						</tr>
+
+
+					</table>
+					<table width="520px" class="table-244" cellpadding="0" cellspacing="0" align="center">
+						<tr>
+							<td align="center">
+								<table cellpadding="0" cellspacing="0" align="center">
+									<tr>
+										<td class="benefits__btn">
+											<a href="#" style="font-family: Arial, 'Open Sans', sans-serif;">Узнать все
+												подробности</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table>
+
+		<!-- Social -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" align="center" bgcolor="#000000">
+			<tr>
+				<td class="social__links">
+					<table cellpadding="0" cellspacing="0" align="center" class="table-244" bgcolor="#000000">
+						<tr>
+							<td>
+								<table width="143px" class="social__link-mobile" cellpadding="0" cellspacing="0"
+									align="center" bgcolor="#000000">
+									<tr>
+										<td>
+												<td>
+													<a href="#">
+														<img src="https://i.postimg.cc/sDpngPQY/Vector.png" alt="">
+													</a>
+												</td>
+												<td>
+													<a href="#">
+														<img src="https://i.postimg.cc/CMnPWpw6/instagram.png" alt="">
+													</a>
+												</td>
+												<td>
+													<a href="#">
+														<img src="https://i.postimg.cc/qRSmzjxL/fb.png" alt="">
+													</a>
+												</td>			
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+
+					<table cellpadding="0" cellspacing="0" align="center" bgcolor="#000000">
+				<tr>
+					<td>
+						<p class="social__brand" style="font-family: Arial, 'Open Sans', sans-serif;">Blanchard © 2020 /
+						Все права защищены</p>
+					</td>
+				</tr>
+					</table>
+
+				</td>
+			</tr>
+		</table>
+
+		<!-- Footer -->
+		<table width="600px" class="table-280" cellpadding="0" cellspacing="0" align="center" bgcolor="#EBEBEB">
+		<tr>
+			<td align="center" class="table-244">
+				<p class="footer__desc" style="font-family: Arial, 'Open Sans', sans-serif;">
+					Вы можете так же
+					<a class="footer__desc" href="#" style="font-family: Arial, 'Open Sans', sans-serif;">отписаться от
+						рассылки</a>
+				</p>
+			</td>
+		</tr>
+		</table>
+
+	</table>
+</body>
+
+</html>
